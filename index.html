@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#B9A7F4">
+  <meta name="description" content="Một phiên làm việc khép lại. Những kỷ niệm được lưu mãi. — Blan">
+  <title>Một lời chào được lưu lại — Blan</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="sky" aria-hidden="true"><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div><div class="cloud cloud-c"></div><span class="spark s1">✦</span><span class="spark s2">+</span><span class="spark s3">✧</span><span class="spark s4">+</span></div>
+  <header class="desktop-heading"><span class="pixel-mark">✿</span> BLAN'S LITTLE DESKTOP <span class="heading-note">a farewell, saved with love.</span></header>
+  <nav class="desktop-icons" aria-label="Các mục trên desktop">
+    <button class="desktop-icon" id="memories-shortcut"><span class="pixel-folder small" aria-hidden="true"></span><span>Kỷ niệm</span></button>
+    <button class="desktop-icon" id="about-shortcut"><span class="note-icon" aria-hidden="true">♡</span><span>Đọc mình.txt</span></button>
+  </nav>
+  <main id="desktop">
+    <section id="welcome" class="welcome scene">
+      <div class="intro-label">LẠC VIỆT • PHIÊN LÀM VIỆC CUỐI CÙNG</div>
+      <div class="window error-window" id="welcome-window">
+        <div class="titlebar drag-handle"><span><span aria-hidden="true">▣</span> last_day.exe</span><div class="window-controls"><button data-minimize="welcome" aria-label="Thu nhỏ thông báo">_</button><button class="close-welcome" aria-label="Đóng thông báo">×</button></div></div>
+        <div class="error-body"><div class="error-symbol" aria-hidden="true">!</div><div><div class="error-code">OOPS! SOMETHING HAS CHANGED…</div><h1>ERROR 404:<br>Nhân sự không còn<br class="desktop-br"> ở văn phòng!</h1><p>Lý do: Đã hoàn thành phiên làm việc cuối cùng tại <strong>Lạc Việt.</strong></p></div></div>
+        <div class="error-action"><button class="retro-button primary" id="recover"><span aria-hidden="true">↺</span> Khôi phục dữ liệu</button><span class="button-hint">Đừng lo, kỷ niệm vẫn còn ở đây.</span></div>
+        <div class="statusbar"><span><i class="status-dot"></i> 1 lời chào chưa gửi</span><span>with love, Blan ♡</span></div>
+      </div>
+      <p class="below-window">Một phiên làm việc khép lại.<br><em>Những điều dễ thương thì được lưu mãi.</em></p>
+    </section>
+    <section class="scene loading-scene" id="loading" hidden aria-live="polite"><div class="window loading-window"><div class="titlebar"><span>▣ recovering_memories.exe</span><span>♡</span></div><div class="loading-body"><span class="pixel-folder" aria-hidden="true"></span><h2>Đang tìm lại những ngày thật vui…</h2><p>Một chút deadline. Một chút cà phê. Rất nhiều kỷ niệm.</p><div class="progress-track" role="progressbar" aria-label="Khôi phục kỷ niệm" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progress-fill"></div></div><div class="progress-caption"><span>Đang khôi phục dữ liệu</span><span id="progress-value">0%</span></div></div></div></section>
+    <section class="scene reveal-scene" id="reveal" hidden><span class="tiny-label">FOLDER FOUND / MEMORIES</span><h2>Những khoảnh khắc<br><em>kỷ niệm</em><span class="title-star">✧</span></h2><p>Có những ngày bình thường, khi nhớ lại thấy rất thương.</p></section>
+    <section class="scene gallery-scene" id="gallery" hidden aria-label="Thư mục kỷ niệm"><div class="gallery-heading"><span class="tiny-label">C:\BLAN\NHỮNG NGÀY Ở LẠC VIỆT</span><h2>Những khoảnh khắc <em>kỷ niệm</em> <span>✧</span></h2><p>Một chút lộn xộn. Rất nhiều thương mến.</p></div><div class="photo-board" id="photo-board">
+      <div class="letters-entry" id="letters-entry" hidden>
+        <button id="open-folder" class="letter-folder" aria-label="Mở thư mục Một ít điều nhỏ Blan muốn nói, gồm 4 lá thư">
+          <svg class="letter-folder-art" viewBox="0 0 180 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" shape-rendering="crispEdges">
+            <path d="M22 30H68L80 42H160V124H22V30Z" fill="#8369C7" opacity=".2"/>
+            <path d="M16 22H62L74 34H154V116H16V22Z" fill="#E8B74D" stroke="#785638" stroke-width="3"/>
+            <path d="M21 27H59L71 39H149" stroke="#FFF1B8" stroke-width="3"/>
+            <path d="M24 45H144V106H24V45Z" fill="#FFFDF9" stroke="#B48D51" stroke-width="2"/>
+            <path d="M34 40H136V106H34V40Z" fill="#FFFDF9" stroke="#B48D51" stroke-width="2"/>
+            <path d="M8 56H164L151 120H20L8 56Z" fill="#F6D678" stroke="#785638" stroke-width="3"/>
+            <path d="M14 61H158L147 114H25" stroke="#FFF1B8" stroke-width="3"/>
+            <path d="M70 77H80V82H85V77H95V82H100V92H95V97H90V102H85V107H80V102H75V97H70V92H65V82H70V77Z" fill="#C88B82"/>
+            <path d="M70 77H80V82H85V77H95V82H100V87H95V92H90V97H85V102H80V97H75V92H70V87H65V82H70V77Z" fill="#F8C9DF"/>
+          </svg>
+          <strong>Một ít điều nhỏ<br>Blan muốn nói</strong>
+          <span class="folder-hint">Bấm để đọc thư →</span>
+        </button>
+      </div>
+    </div><p class="gallery-footnote">Những kỷ niệm này không có ngày hết hạn. ♡</p></section>
+  </main>
+  <div id="modal-layer"></div>
+  <div id="toast" role="status" hidden></div>
+  <footer class="taskbar"><button class="start-button" id="home"><span class="start-flower">✿</span><strong>Blan</strong></button><span class="taskbar-divider"></span><button class="task-button" id="active-task">▣ <span>last_day.exe</span></button><button class="contract-button" id="contract"><span aria-hidden="true">✧</span><span>Gia hạn hợp đồng thêm 100 năm</span></button><div class="system-tray"><button id="sound" aria-pressed="true" aria-label="Tắt âm thanh">♫ <span>Âm thanh: Bật</span></button><span class="tray-heart">♡</span><time id="clock">17:30</time></div></footer>
+</body>
+</html>
